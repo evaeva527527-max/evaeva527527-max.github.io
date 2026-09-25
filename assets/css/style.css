@@ -50,7 +50,6 @@ dl,dd{ margin:0; }
 
 /* ---------- 燙金漸層 ---------- */
 .foil,
-.logo-word,
 .hero-name,
 .sec-head h2,
 .foot-logo,
@@ -81,15 +80,10 @@ dl,dd{ margin:0; }
 }
 
 .logo{ display:block; }
-.logo-word{
+.logo-img{
   display:block;
-  font-family:var(--display);
-  font-size:40px;
-  font-weight:700;
-  letter-spacing:.2em;
-  line-height:1;
-  animation:foilShift 9s ease-in-out infinite alternate,
-            gloss 6s ease-in-out infinite;
+  width:100%;
+  height:auto;
 }
 .logo-line{
   display:block;
@@ -615,7 +609,8 @@ dl,dd{ margin:0; }
     border-right:none;
     border-bottom:1px solid var(--line);
   }
-  .logo-word{ font-size:26px; letter-spacing:.16em; }
+  .logo{ flex:0 0 auto; }
+  .logo-img{ width:130px; }
   .logo-line{ display:none; }
   .nav{ margin-top:0; flex-direction:row; gap:4px; overflow-x:auto; }
   .nav-link{ padding:8px 10px; font-size:13.5px; letter-spacing:.14em; white-space:nowrap; }
