@@ -24,6 +24,9 @@
 
 *,*::before,*::after{ box-sizing:border-box; }
 
+/* hidden 屬性必須永遠勝過元件本身的 display 規則 */
+[hidden]{ display:none !important; }
+
 html{ scroll-behavior:smooth; }
 
 body{
